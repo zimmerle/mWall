@@ -1,4 +1,16 @@
-mwall (0.1-1) unstable; urgency=low
+mwall (0.1-4) unstable; urgency=low
+
+  * Bug fix?
+
+ -- Felipe Zimmerle <felipe@zimmerle.org>  Fri, 18 Dec 2009 05:36:46 +0200
+
+  * Bug fix?
+
+ -- Felipe Zimmerle <felipe@zimmerle.org>  Fri, 18 Dec 2009 05:36:46 +0200
+
+  * Changed package section and added the package icon.
+
+ -- Felipe Zimmerle <felipe@zimmerle.org>  Fri, 18 Dec 2009 05:34:46 +0200
 
   * Initial release
 

@@ -1,11 +1,59 @@
 Source: mwall
-Section: unknown
-Priority: extra
+Section: user/network
+Priority: optional
 Maintainer: Felipe Zimmerle <felipe@zimmerle.org>
 Build-Depends: debhelper (>= 5), libqt4-dev
-Standards-Version: 3.7.2
+Standards-Version: 3.6.0
 
 Package: mwall
-Architecture: armel
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, iptables
-Description: firewall for maemo
+Description: A simple firewall for maemo
+ A simple firewall for maemo
+XB-Maemo-Icon-26: 
+ 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
