@@ -1,0 +1,11 @@
+Source: mwall
+Section: unknown
+Priority: extra
+Maintainer: Felipe Zimmerle <felipe@zimmerle.org>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.2
+
+Package: mwall
+Architecture: armel
+Depends: ${shlibs:Depends}, ${misc:Depends}, iptables
+Description: firewall for maemo
