@@ -2,6 +2,7 @@
 #include <QDebug>
 #include <QHBoxLayout>
 #include "mwall.h"
+#include "ui_mwall.h"
 
 mWall::mWall(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::mWall)
