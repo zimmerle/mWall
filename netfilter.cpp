@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <QDebug>
 #include "netfilter.h"
 
 #define IPTABLES "/usr/sbin/iptables"
@@ -33,7 +34,13 @@ void NetFilter::disable(int port /* missing proto */)
 
 void NetFilter::init()
 {
-    system(IPTABLES " -p TCP --syn -j ACCEPT");
-    system(IPTABLES " -p TCP -m state --state ESTABLISHED,RELATED -j ACCEPT");
+    qDebug() << "Dropping";
     system(IPTABLES " -P INPUT DROP");
+    //system(IPTABLES " --syn -j ACCEPT");
+    qDebug() << "ESTABLISHED,RELATED";
+    system(IPTABLES " -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT");
+    qDebug() << "lo";
+    system(IPTABLES " -A INPUT -i lo -j ACCEPT");
+    qDebug() << "Done!";
+
 }

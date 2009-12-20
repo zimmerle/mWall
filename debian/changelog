@@ -1,4 +1,8 @@
-mwall (0.1-4) unstable; urgency=low
+mwall (0.1-5) unstable; urgency=low
+
+  * Fix default iptable rules
+
+ -- Felipe Zimmerle <felipe@zimmerle.org>  Fri, 18 Dec 2009 05:36:46 +0200
 
   * Bug fix?
 
